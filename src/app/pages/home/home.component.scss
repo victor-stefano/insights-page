@@ -28,7 +28,7 @@ h1, h5{
 
 .section1{
     height: 70vh;
-    background-image: url(../../../assets/imgs/home-image.jpg);
+    background-image: url(../../../assets/imgs/home-image.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -43,7 +43,7 @@ h1, h5{
 
     .img-section2{
         transform: scaleX(-1);
-        background-image: url(../../../assets/imgs/robot.png);
+        background-image: url(../../../assets/imgs/robot.svg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -54,7 +54,7 @@ h1, h5{
     background-color: var(--backgound);
     .img-section3{
         transform: scaleX(-1);
-        background-image: url(../../../assets/imgs/robot2.png);
+        background-image: url(../../../assets/imgs/robot2.svg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -160,50 +160,3 @@ footer{
         padding-right: 30px !important;
     }
 }
-// @media (max-width: 416px) {
-//     h1{
-//         font-size: 50px !important;
-//     }
-//     .section2{
-//         padding-bottom: 0 !important;
-//         flex-direction: column;
-//         align-items: center;
-//         .img-section2{
-//             background-position: center;
-//             width: 100vw !important;
-//             height: 50vh;
-//         }
-//         div{
-//             width: 100% !important;
-//         }
-//     }
-//     .section3{
-//         padding-top: 0 !important;
-//         flex-direction: column;
-//         align-items: center;
-//         .img-section3{
-//             background-position: center;
-//             width: 100vw !important;
-//             height: 50vh;
-//         }
-//         div{
-//             width: 100% !important;
-//         }
-//     }
-//     footer{
-//         margin-top: 0 !important;
-//     }
-//     .section0{
-//         padding-left: 30px !important;
-//         padding-right: 30px !important;
-//         div{
-//             width: 100% !important;
-//         }
-//     }
-//     nav{
-//         display: flex !important;
-//         flex-direction: column !important;
-//         justify-content: center !important; 
-//         align-items: center !important;
-//     }
-// }
