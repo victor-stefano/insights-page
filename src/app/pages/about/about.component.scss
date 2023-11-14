@@ -1,0 +1,78 @@
+.navbar{
+    backdrop-filter: blur(10px) brightness(80%);
+}
+.btn{
+    color: var(--text-white);
+    background: transparent;
+}
+.logo{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(196deg) brightness(107%) contrast(102%);
+}
+h1, h5{
+    text-align: start !important;
+    font-weight: bold;
+}
+p{
+    margin-bottom: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+section{
+    background-image: linear-gradient(to bottom, #D9D5F2, #9E9CD9);
+}
+
+.members {
+    padding: 15px;
+    border: none;
+    background-image: linear-gradient(to right, #363ED9, #415CF2);
+    border-radius: 0.75rem;
+    color: var(--text-white);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+    width: 550px;
+    margin-top: 4rem;
+    margin-left: 6rem;
+
+    p{
+        font-weight: lighter;
+    }
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        align-items: center !important;
+        .profile-photo{
+            width: 85%;
+            margin-left: 0;
+            margin-top: -75px;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.members:hover .profile-photo {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.profile-photo{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: -100px;
+    border-radius: 3%;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+footer{
+    color: var(--text-white);
+    background-color: var(--secondary);
+}
