@@ -1,5 +1,12 @@
-.navbar{
+.navbar, footer{
     backdrop-filter: blur(10px) brightness(80%);
+    .btn{
+      padding-bottom: 2px;
+      border-radius: 0rem;
+      &:hover{
+          border-bottom: 1.5px solid white;
+      }
+    }
 }
 .btn{
     color: var(--text-white);
@@ -7,6 +14,11 @@
 }
 .logo{
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(196deg) brightness(107%) contrast(102%);
+    transition: 0.3s;
+    &:hover{
+        transform: rotate(30deg);
+        transition: 0.3s;
+    }
 }
 h1, h5{
     text-align: start !important;
@@ -24,7 +36,7 @@ header {
 }
 
 section{
-    background-image: linear-gradient(to bottom, #D9D5F2, #9E9CD9);
+    background-image: linear-gradient(to bottom, #fefefe, #9E9CD9);
 }
 
 .members {
@@ -37,6 +49,7 @@ section{
     width: 550px;
     margin-top: 4rem;
     margin-left: 6rem;
+    transition: 0.3s;
 
     p{
         font-weight: lighter;
@@ -59,6 +72,11 @@ section{
 
 .members:hover .profile-photo {
     transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.members:hover {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
     transition: 0.3s;
 }
 

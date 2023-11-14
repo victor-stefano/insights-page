@@ -5,12 +5,14 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule } from '@angular/router';
+import { InsightsComponent } from './insights/insights.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    InsightsComponent
   ],
   imports: [
     CommonModule,
