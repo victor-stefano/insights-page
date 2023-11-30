@@ -6,13 +6,15 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule } from '@angular/router';
 import { InsightsComponent } from './insights/insights.component';
+import { GptComponent } from './gpt/gpt.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     AboutComponent,
-    InsightsComponent
+    InsightsComponent,
+    GptComponent
   ],
   imports: [
     CommonModule,

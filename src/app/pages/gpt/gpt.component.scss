@@ -1,0 +1,102 @@
+.navbar, footer{
+    backdrop-filter: blur(10px) brightness(80%);
+    .btn{
+      padding-bottom: 2px;
+      border-radius: 0rem;
+      &:hover{
+          border-bottom: 1.5px solid white;
+      }
+    }
+    @media (max-width: 420px) {
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.btn{
+    color: var(--text-white);
+    background: transparent;
+}
+.logo{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(196deg) brightness(107%) contrast(102%);
+    transition: 0.3s;
+    &:hover{
+        transform: rotate(30deg);
+        transition: 0.3s;
+    }
+}
+h1, h5{
+    text-align: start !important;
+    font-weight: bold;
+}
+a{
+    text-decoration: none !important;
+    color: var(--text) !important;
+}
+main{
+    background-image: linear-gradient(to bottom, #fefefe, #9E9CD9);
+}
+footer{
+    color: var(--text-white);
+    background-color: var(--secondary);
+}
+.section1{
+    height: 70vh;
+    background-image: url(../../../assets/imgs/programming-coding-language-uhdpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: var(--text-white);
+
+    box-shadow: 0 0 1rem black;
+}
+.versions{
+    width: 50%;
+    border-radius: 0.75rem;
+    background-image: linear-gradient(to top, #6e42c19f, #977cc8de);
+    box-shadow: 0 0 1rem rgb(0, 0, 0, 0.3);
+    color: var(--text-white);
+    transition: 0.3s;
+    &:hover{
+        box-shadow: 0 0 1rem rgb(0, 0, 0, 0.5);
+        transition: 0.3s;
+    }
+    .timeline{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+    }
+}
+
+.text-hover, h2 {
+    position: relative;
+}
+
+.text-hover::after, h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 50px;
+    background-color: #977cc842;
+    transition: width 0.3s ease;
+}
+
+.text-hover:hover::after, h2:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    h1{
+        font-size: xx-large;
+    }
+    .versions{
+        width: 100%;
+    }
+}

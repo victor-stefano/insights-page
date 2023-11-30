@@ -7,6 +7,14 @@
           border-bottom: 1.5px solid white;
       }
     }
+    @media (max-width: 420px) {
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 .btn{
     color: var(--text-white);
@@ -76,6 +84,27 @@ h1, h5{
 footer{
     color: var(--text-white);
     background-color: var(--secondary);
+}
+
+.text-hover{
+    h1 {
+        position: relative;
+    }
+    
+    h1::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 50px;
+        background-color: #977cc842;
+        transition: width 0.3s ease;
+    }
+    
+    h1:hover::after {
+        width: 100%;
+    }
 }
 
 @media (min-width: 991px) {

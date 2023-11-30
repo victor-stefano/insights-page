@@ -1,0 +1,168 @@
+<main>
+    <nav class="navbar fixed-top bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" [routerLink]="['/']">
+            <img src="assets/imgs/logo-openai.svg" alt="logo" width="30" class="logo">
+          </a>
+          <div>
+            <button type="button" title="Insights" class="btn" [routerLink]="['/gpt']">GPT</button>
+            <button type="button" title="Insights" class="btn" [routerLink]="['/references']">References</button>
+            <button type="button" title="About" class="btn" [routerLink]="['/about']">About</button>
+            <a href="https://openai.com/">
+                <button type="button" title="GPT" class="btn" href="https://openai.com">Chat</button>
+            </a>
+          </div>
+        </div>
+    </nav>
+    <section class="section1 d-flex justify-content-start align-items-end p-3">
+        <div class="container mb-5">
+            <p class="mb-1">Experience the</p>
+            <h1 class="display-3">ARTIFICIAL INTELLIGENCE</h1>
+        </div>
+    </section>
+    <section class="container p-4 mt-5 text-justify">
+        <p>Artificial Intelligence (AI) is a field of computer science that focuses on the development of systems capable of performing tasks that typically require human intelligence. This includes learning, reasoning, pattern recognition, natural language understanding, decision-making, and problem-solving. The goal of AI is to create machines capable of mimicking human ability to think and act intelligently.</p>
+        <p><b>There are two main categories of AI:</b></p>
+        <p>Weak AI (Narrow): Refers to systems designed and trained to perform specific tasks without possessing a general understanding. Examples include virtual assistants, speech recognition, and autonomous vehicles.</p>
+        <p>Strong AI (General): Refers to systems that have the capacity for general understanding and can perform diverse intellectual tasks, similar to human intelligence. This is a theoretical goal and has not yet been fully achieved.</p>
+    </section>
+    <section class="container px-4 text-justify">
+        <div class="d-flex justify-content-center">
+            <h1 class="my-5 text-hover">LANGUAGE MODEL</h1>
+        </div>
+        <h5>GENERATIVE PRE-TRAINED TRANSFORMER</h5>
+        <p>The GPT language model, or Generative Pre-trained Transformer, is a class of language model architectures developed by OpenAI. These models are notable for their ability to understand and generate text in a natural and coherent manner.</p>
+        <h5>Transformer:</h5>
+        <p>GPT is based on the Transformer architecture, introduced in 2017 by Vaswani et al. This architecture revolutionized natural language processing (NLP) through attention mechanisms. The Transformer allows the model to capture complex relationships between words in a sequence, overcoming some limitations of previous architectures.</p>
+        <h5>Pre-training:</h5>
+        <p>The "pre-trained" approach refers to the model being initially trained on large amounts of textual data before being fine-tuned for specific tasks. During the pre-training phase, the model learns the structure of language, semantic and grammatical relationships, becoming a kind of "general understanding" of language.</p>
+        <h5>Generative:</h5>
+        <p>The generative nature of GPT means that it can continuously generate new textual content. This is useful for various tasks such as completing sentences, machine translation, text summarization, and even creative text generation.</p>
+        <h5>Contextual Attention:</h5>
+        <p>A key feature of the Transformer is contextual attention, allowing the model to consider different parts of the input text to varying degrees depending on the context. This helps the model capture long-range relationships and better understand the meaning of a word based on its context.</p>
+        <h5>Transfer Learning:</h5>
+        <p>After the pre-training phase, the model can be fine-tuned for specific tasks. This allows the transfer of knowledge acquired during pre-training to more specific tasks.</p>
+    </section>
+    <section class="container px-4 text-justify">
+        <div class="d-flex justify-content-center">
+            <h1 class="my-5 text-hover">VERSIONS</h1>
+        </div>
+        <div class="d-flex flex-column">
+            <div class="d-flex my-3">
+                <div class="versions p-3">
+                    <div class="timeline d-flex justify-content-center align-items-center mb-3">
+                        <img src="../../../assets/imgs/timeline-icon.svg" alt="timeline" width="25">
+                    </div>
+                    <h5>GPT-1 (Generative Pre-trained Transformer 1):</h5>
+                    <p>Launched in 2018, GPT-1 was the first model in the series. It featured 117 million parameters and was trained to predict the next word in a sentence based on a given context.</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center w-50" *ngIf="!isWidgetSmallerThan768"> 
+                    <h2 class="my-0 mx-3">June 2018</h2>
+                    <img src="../../../assets/imgs/clock.svg" alt="clock" width="30">
+                </div>
+            </div>
+            <div class="d-flex my-3">
+                <div class="d-flex align-items-center justify-content-center w-50" *ngIf="!isWidgetSmallerThan768"> 
+                    <img src="../../../assets/imgs/clock.svg" alt="clock" width="30">
+                    <h2 class="my-0 mx-3">February 2019</h2>
+                </div>
+                <div class="versions p-3">
+                    <div class="timeline d-flex justify-content-center align-items-center mb-3">
+                        <img src="../../../assets/imgs/timeline-icon.svg" alt="timeline" width="25">
+                    </div>
+                    <h5>GPT-2 (Generative Pre-trained Transformer 2):</h5>
+                    <p>Released in 2019, GPT-2 was a significantly larger version compared to GPT-1, with 1.5 billion parameters. OpenAI initially hesitated to release the full model due to concerns about its potential for generating false and malicious text.</p>
+                </div>
+            </div>
+            <div class="d-flex my-3">
+                <div class="versions p-3">
+                    <div class="timeline d-flex justify-content-center align-items-center mb-3">
+                        <img src="../../../assets/imgs/timeline-icon.svg" alt="timeline" width="25">
+                    </div>
+                    <h5>GPT-3 (Generative Pre-trained Transformer 3):</h5>
+                    <p>Launched in June 2020, GPT-3 is one of the largest language models ever created, with 175 billion parameters. It achieved remarkable results in various natural language processing tasks, including language translation, text generation, and solving mathematical problems, among others. GPT-3 was made available through OpenAI's API, allowing developers to use the model's services in their own applications.</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center w-50" *ngIf="!isWidgetSmallerThan768"> 
+                    <h2 class="my-0 mx-3">June 2020</h2>
+                    <img src="../../../assets/imgs/clock.svg" alt="clock" width="30">
+                </div>
+            </div>
+            <div class="d-flex my-3">
+                <div class="d-flex align-items-center justify-content-center w-50" *ngIf="!isWidgetSmallerThan768"> 
+                    <img src="../../../assets/imgs/clock.svg" alt="clock" width="30">
+                    <h2 class="my-0 mx-3">March 2023</h2>
+                </div>
+                <div class="versions p-3">
+                    <div class="timeline d-flex justify-content-center align-items-center mb-3">
+                        <img src="../../../assets/imgs/timeline-icon.svg" alt="timeline" width="25">
+                    </div>
+                    <h5>GPT-4 (Generative Pre-trained Transformer 4):</h5>
+                    <p>Released by OpenAI in March 2023, GPT-4 is more efficient than its predecessor. According to OpenAI developers, it is capable of providing more complete and human-like responses. Additionally, the company claims that GPT-4 has fewer flaws compared to its predecessor, reducing, for example, the amount of content considered inappropriate on the platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="align pt-3 container">
+        <div class="d-flex justify-content-center">
+            <h1 class="my-5 text-hover">PROS x CONS</h1>
+        </div>
+        <section class="section0 px-4 d-flex justify-content-center">
+            <div class="mt-3 text-justify">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">PROS</th>
+                            <th scope="col">CONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><p><b>Automation of Repetitive Tasks:</b></p>AI can automate routine and repetitive tasks, increasing efficiency and allowing humans to focus on more complex and creative tasks.</td>
+                            <td><p><b>Algorithmic Bias:</b></p>AI algorithms may reflect and amplify biases present in training data, resulting in discriminatory systems.</td>
+                        </tr>
+                        <tr>
+                            <td><p><b>Advanced Data Analysis:</b></p>AI can process large volumes of data quickly and efficiently, identifying patterns and insights that may be challenging for traditional methods.</td>
+                            <td><p><b>Technological Unemployment:</b></p>Automation driven by AI may lead to job displacement, resulting in social and economic challenges, especially without effective retraining strategies.</td>
+                        </tr>
+                        <tr>
+                            <td><p><b>Assistance in Decision-Making:</b></p>AI systems can provide valuable analyses and recommendations to support decision-making in various sectors, such as finance, healthcare, and business.</td>
+                            <td><p><b>Privacy and Security:</b></p>The massive data collection by AI raises concerns about privacy. Additionally, AI systems can be targets for cyber attacks.</td>
+                        </tr>
+                        <tr>
+                            <td><p><b>Improved User Experience:</b></p>In fields like customer service, chatbots, and AI-based virtual assistants can offer more efficient and personalized interactions.</td>
+                            <td><p><b>Lack of Transparency:</b></p>Many AI models, especially complex ones, can be opaque, making it difficult to understand how they make specific decisions.</td>
+                        </tr>
+                        <tr>
+                            <td><p><b>Advances in Medicine and Research:</b></p>AI can accelerate the discovery of new drugs, assist in medical diagnoses, and contribute to significant breakthroughs in scientific research.</td>
+                            <td><p><b>Excessive Dependence:</b></p>Excessive reliance on AI systems can result in significant failures if the systems are not adequately tested and monitored.</td>
+                        </tr>
+                        <tr>
+                            <td><p><b>Innovation in Various Sectors:</b></p>AI is driving innovation in sectors such as mobility, agriculture, energy, and manufacturing, creating more efficient and sustainable solutions.</td>
+                            <td><p><b>Ethical Challenges:</b></p>Ethical issues, such as the autonomy of decision-making in autonomous systems and information manipulation, require careful considerations and ethical approaches in AI implementation.</td>
+                        </tr>
+                        <tr>
+                            <td><p><b>Enhancement of Creative Tasks:</b></p>AI-based tools, such as photo and music editors, can enhance users' creative skills, facilitating content creation.</td>
+                            <td><p><b>Uncontrolled Superintelligence:</b></p>Speculation about the development of uncontrolled superintelligent AI raises concerns about safety and ethics.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <footer class="p-3 d-flex flex-column align-items-center justify-content-between mt-5">
+        <div class="container d-flex justify-content-between align-items-center mb-5">
+            <a class="navbar-brand" [routerLink]="['/']">
+              <img src="assets/imgs/logo-openai.svg" alt="logo" width="60" class="logo">
+            </a>
+            <div>
+                <button type="button" title="Insights" class="btn" [routerLink]="['/gpt']">GPT</button>
+                <button type="button" title="Insights" class="btn" [routerLink]="['/references']">References</button>
+                <button type="button" title="About" class="btn" [routerLink]="['/about']">About</button>
+                <a href="https://openai.com/">
+                    <button type="button" title="GPT" class="btn" href="https://openai.com">Chat</button>
+                </a>
+            </div>
+        </div>
+        <p class="mt-5 text-center">All rights reserved © 2023 - UC: Instrumental English and Digital Thinking</p>
+    </footer>
+</main>
